@@ -24,7 +24,8 @@ while true; do
     echo -e " 4. restart panel"
     echo -e " 5. install docker"
     echo -e " 6. stop Panel"
-    echo -e " 7. Soon"
+    echo -e " 7. custom modules ( pufferpanel )"
+    echo -e " 8. Soon"
     echo -e "_________________________________________________"
     echo -e "\033[0m"
 
@@ -83,7 +84,11 @@ docker create --name pufferpanel \
             echo ""
             read -p "Main menu par jaane ke liye [Enter] dabayein..."
             ;;
-       7)
+        7)
+            echo -e "\n\033[1;32m[+]Custom modulem khul rha he.\033[0m"
+         bash <(curl -s https://raw.githubusercontent.com/namoc766-art/pufferpanel/main/installer.sh)
+            ;;
+      8)
             echo -e "\n\033[1;33m[!] Option 4: Naye features jaldi aane wale hain!\033[0m"
             echo ""
             read -p "Main menu par jaane ke liye [Enter] dabayein..."
